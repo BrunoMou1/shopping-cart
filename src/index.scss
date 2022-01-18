@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+}
+
+.card-list {
+  width: 70%;
+  display: flex;
+  background-color: #f0f0f0;
+  flex-wrap: wrap;
+  justify-content: start;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+
+.shopping-car {
+  width: 30%;
+  align-items: center;
+  padding: 0.9rem;
+  text-align: center;
+
+  .cart-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin-bottom: 1rem;
+
+    button {
+      background-color: rgba(255, 0, 0, 0.74);
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+    p {
+      font-size: 1rem;
+      font-weight: lighter;
+      color: rgb(59, 59, 59);
+      padding: 1rem;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+
+    }
+
+    .plus {
+      font-size: 1.7rem;
+      margin-right: 1rem;
+      color: rgb(37, 228, 47);
+    }
+
+    .minus {
+      font-size: 1.7rem;
+      margin-right: 1rem;
+      color: rgb(212, 28, 28);
+    }
+
+    .trash {
+      font-size: 1.7rem;
+      margin-right: 1rem;
+      color: rgb(212, 28, 28);
+    }
+  }
+}
